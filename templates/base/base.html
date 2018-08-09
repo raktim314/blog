@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{%block title%}{%endblock%}</title>
+
+    <link rel="stylesheet" href="{% static 'css/theme_style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
+
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+    <div class="tempt_container">
+        <div id="tempt_menu">
+        <nav id="cd-vertical-nav">
+                <ul>
+                    <li>
+                        <a href="#section1" data-number="1">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label">About me</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section2" data-number="2">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label">Readings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section3" data-number="3">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label">Features</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section4" data-number="4">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label">Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section5" data-number="5">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label">Pricing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section6" data-number="6">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section id="section1" class="cd-section">
+                <h1>Vertical Fixed Navigation</h1>
+                <a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
+            </section><!-- cd-section -->
+
+            <section id="section2" class="cd-section">
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+
+            </section><!-- cd-section -->
+
+            <section id="section3" class="cd-section">
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+            </section><!-- cd-section -->
+
+            <section id="section4" class="cd-section">
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+            </section><!-- cd-section -->
+
+            <section id="section5" class="cd-section">
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+            </section><!-- cd-section -->
+
+            <section id="section6" class="cd-section">
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+            </section><!-- cd-section -->
+    </div>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    {% block js%}{% endblock %}
+</body>
+</html>
