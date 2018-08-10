@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import HttpResponse
 
-def post(request):
-    return render(request, 'base/post.html')
+def index(request):
+    return HttpResponse("Hello, you're at right place")
